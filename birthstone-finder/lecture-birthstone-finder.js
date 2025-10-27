@@ -2,6 +2,16 @@
 💎 Birthstone Finder
 ----------------------------
 We will refactor the Birthstone Finder app to read birthstone data from a separate JSON file.
-------------------------- */
+------------------------- 
+we'll practice:
+-using a built-in noed module called fs, file system 
+-read data from a file 
+- practice ES module syntax vs. ComonJS syntax which are both for accessing Node Modules
+----------
+//two ways for accessing a Node Module
+//old way, commonJS
+*/
+const fs = require("fs");
 
-/*
+//new way, ES Modules
+import fs from "fs/promises";
