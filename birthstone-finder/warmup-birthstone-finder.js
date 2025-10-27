@@ -31,7 +31,7 @@ const birthstones = {
 console.log(process.argv);
 
 // name
-const userMonth = process.argv;
+const userMonth = process.argv[2];
 
 // Check if the inputted month is valid and exists in the `birthstones` data object included in the code file
 // - If the month is invalid, output an error message:
