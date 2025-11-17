@@ -12,9 +12,11 @@ import fs from "fs/promises";
 
 //Take user input with `process.argv`
 // i did the above for the order and the input, because there is a second input i used the number 3 in process.argv
+
 const orders = process.argv[2];
+console.log("orders:", orders);
 const GetOneOrder = process.argv[3];
-// const command = process.argv[2];
+const command = process.argv[3];
 
 //Below is the function for getAllOrders
 async function getOrders() {
@@ -41,12 +43,10 @@ async function getOrders() {
     });
 
     // otherwise, if the user typed a valid order number, print that specific order
-  } else if (parsedData[indexInput]) {
+  } else if (parsedData[command]) {
     // access that specific order using its array index
     // else if go inside the parsedData array and pick the item at this index according to it's key (.pizza and .note)
-    console.log(
-      `${parsedData[indexInput].pizza} - ${parsedData[indexInput].note}`
-    );
+    console.log("parsedData[command]:", parsedData[command]);
 
     // if the user typed something invalid (wrong command or number), show an error
   } else {
